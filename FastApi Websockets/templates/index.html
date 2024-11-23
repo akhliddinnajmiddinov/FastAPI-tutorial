@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Websocket learning</title>
+</head>
+<body>
+	<form action="" onsubmit="sendMessage(event)">
+		<label for='message'>Input message: </label>
+		<input type="text" name="message" id="message">
+		<button type="submit">Submit</button>
+	</form>
+
+	<ul id="messages">
+	</ul>
+
+	<script type="text/javascript" src="{{ url_for('static', path='index.js') }}"></script>
+</body>
+</html>
